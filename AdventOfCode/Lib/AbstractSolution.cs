@@ -19,14 +19,7 @@
 
         protected virtual string LoadInput()
         {
-            string inputPath = Path.Combine(AppSettings.Path, $"Y{Year}\\Day{Day}\\input.in");
-
-            if (File.Exists(inputPath) && new FileInfo(inputPath).Length > 0)
-            {
-                return File.ReadAllText(inputPath);
-            }
-
-            return string.Empty;
+            return FileReader.ReadAllText(Day, Year);
         }
 
         public abstract string SolvePartOne();
