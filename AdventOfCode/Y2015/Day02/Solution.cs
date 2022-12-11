@@ -1,14 +1,13 @@
 ﻿using AdventOfCode.Lib;
 using AdventOfCode.Lib.Attributes;
 
-namespace AdventOfCode.Y2015.Day2
+namespace AdventOfCode.Y2015.Day02
 {
     [Link("https://adventofcode.com/2015/day/2")]
     public class Solution : AbstractSolution
     {
         public Solution() : base(2, 2015, "I Was Told There Would Be No Math")
         {
-
         }
 
         protected override string LoadInput()

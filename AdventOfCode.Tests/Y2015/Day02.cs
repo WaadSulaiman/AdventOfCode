@@ -1,13 +1,13 @@
 ﻿using AdventOfCode.Lib;
-using AdventOfCode.Y2015.Day1;
+using AdventOfCode.Y2015.Day02;
 
 namespace AdventOfCode.Tests.Y2015
 {
-    public class Day1
+    public class Day02
     {
         private readonly AbstractSolution day;
-        
-        public Day1()
+
+        public Day02()
         {
             day = new Solution();
         }
@@ -16,14 +16,14 @@ namespace AdventOfCode.Tests.Y2015
         public void PartOne()
         {
             string actual = day.SolvePartOne();
-            Assert.Equal("280", actual);
+            Assert.Equal("1588178", actual);
         }
 
         [Fact]
         public void PartTwo()
         {
             string actual = day.SolvePartTwo();
-            Assert.Equal("1797", actual);
+            Assert.Equal("3783758", actual);
         }
     }
 }

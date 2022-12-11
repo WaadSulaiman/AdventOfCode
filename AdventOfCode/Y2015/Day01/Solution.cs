@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Lib;
 using AdventOfCode.Lib.Attributes;
 
-namespace AdventOfCode.Y2015.Day1
+namespace AdventOfCode.Y2015.Day01
 {
     [Link("https://adventofcode.com/2015/day/1")]
     public class Solution : AbstractSolution
@@ -13,14 +13,12 @@ namespace AdventOfCode.Y2015.Day1
         [Answer(280)]
         public override string SolvePartOne()
         {
-            int floor = Input.Aggregate(0, (current, character) => character switch
+            return Input.Aggregate(0, (current, character) => character switch
             {
                 '(' => current + 1,
                 ')' => current - 1,
-                _ => throw new NotImplementedException(),
-            });
-
-            return floor.ToString();
+                _ => throw new InvalidDataException(),
+            }).ToString();
         }
 
         [Answer(1797)]

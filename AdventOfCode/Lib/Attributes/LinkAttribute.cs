@@ -4,7 +4,7 @@
     public class LinkAttribute : Attribute
     {
         public string Url { get; }
-        
+
         public LinkAttribute(string url)
         {
             Url = url;
