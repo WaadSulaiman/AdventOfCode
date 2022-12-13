@@ -15,7 +15,7 @@ namespace AdventOfCode.Y2015.Day03
         {
             HashSet<House> visited = new HashSet<House>();
 
-            House santaLocation = new House(0, 0); 
+            House santaLocation = new House(0, 0);
             visited.Add(santaLocation);
 
             return Input.Aggregate(visited, (houses, direction) =>
